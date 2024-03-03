@@ -238,6 +238,95 @@ const CarouselPrevious = React.forwardRef<
 })
 CarouselPrevious.displayName = "CarouselPrevious"
 
+
+const CarouselPreviousTwo = React.forwardRef<
+  HTMLButtonElement,
+  React.ComponentProps<typeof Button>
+>(({ className, variant = "outline", size = "icon", ...props }, ref) => {
+  const { orientation, scrollPrev, canScrollPrev } = useCarousel()
+
+  return (
+    <Button
+      ref={ref}
+      variant={variant}
+      size={size}
+      className={cn(
+        "absolute  flex-col h-0 w-0 rounded-full",
+        orientation === "horizontal"
+          ? "-left-12 top-1/2 -translate-y-1/2"
+          : "-top-12 left-1/2 -translate-x-1/2 rotate-90",
+        className
+      )}
+      disabled={!canScrollPrev}
+      onClick={scrollPrev}
+      {...props}
+    >
+     
+      <span className="sr-only">Previous slide</span>
+      <h2 className={`font-black flex-col text-center text-white  mb-3 -rotate-[40deg] lg:text-[22px] sm:text-[30px] xs:text-[42px] text-[37.4px] leading-[53px] sm:leading-[50px] sm:mb-18 mb-0   justify-normal  `}>
+        SERIOUSLY
+      </h2>
+      <h2 className={`font-black flex-row text-center text-white   ml-[35px] lg:text-[22px] sm:text-[30px] xs:text-[42px] text-[37.4px] leading-[53px] sm:leading-[50px] sm:mb-18 mb-0   justify-normal  `}>
+        SERIOUSLY
+      </h2>
+      
+      
+      <h2 className={`font-black flex-col text-center text-white mt-3  rotate-[40deg] lg:text-[22px] sm:text-[30px] xs:text-[42px] text-[37.4px] leading-[53px] sm:leading-[50px] sm:mb-18 mb-0   justify-normal  `}>
+        SERIOUSLY
+      </h2>
+      
+     
+    </Button>
+    
+  )
+})
+CarouselPreviousTwo.displayName = "CarouselPreviousTwo"
+
+
+
+const CarouselPreviousThree = React.forwardRef<
+  HTMLButtonElement,
+  React.ComponentProps<typeof Button>
+>(({ className, variant = "outline", size = "icon", ...props }, ref) => {
+  const { orientation, scrollPrev, canScrollPrev } = useCarousel()
+
+  return (
+    <Button
+      ref={ref}
+      variant={variant}
+      size={size}
+      className={cn(
+        "absolute  flex-col h-0 w-0 rounded-full",
+        orientation === "horizontal"
+          ? "-left-12 top-1/2 -translate-y-1/2"
+          : "-top-12 left-1/2 -translate-x-1/2 rotate-90",
+        className
+      )}
+      disabled={!canScrollPrev}
+      onClick={scrollPrev}
+      {...props}
+    >
+     
+      <span className="sr-only">Previous slide</span>
+      <h2 className={`font-black flex-col text-center text-white   -rotate-[40deg] lg:text-[32px] sm:text-[30px] xs:text-[42px] text-[37.4px] leading-[53px] sm:leading-[50px] sm:mb-18 mb-0   justify-normal  `}>
+        THE 
+      </h2>
+      <h2 className={`font-black flex-row text-center text-white   ml-[35px] lg:text-[22px] sm:text-[30px] xs:text-[42px] text-[37.4px] leading-[53px] sm:leading-[50px] sm:mb-18 mb-0   justify-normal  `}>
+        THE THE THE 
+      </h2>
+      
+      
+      <h2 className={`font-black flex-col text-center text-white  rotate-[40deg] lg:text-[32px] sm:text-[30px] xs:text-[42px] text-[37.4px] leading-[53px] sm:leading-[50px] sm:mb-18 mb-0   justify-normal  `}>
+        THE
+      </h2>
+      
+     
+    </Button>
+    
+  )
+})
+CarouselPreviousThree.displayName = "CarouselPreviousThree"
+
 const CarouselNext = React.forwardRef<
   HTMLButtonElement,
   React.ComponentProps<typeof Button>
@@ -279,6 +368,91 @@ const CarouselNext = React.forwardRef<
 })
 CarouselNext.displayName = "CarouselNext"
 
+
+
+const CarouselNextTwo = React.forwardRef<
+  HTMLButtonElement,
+  React.ComponentProps<typeof Button>
+>(({ className, variant = "outline", size = "icon", ...props }, ref) => {
+  const { orientation, scrollNext, canScrollNext } = useCarousel()
+
+  return (
+    <Button
+      ref={ref}
+      variant={variant}
+      size={size}
+      className={cn(
+        "absolute flex-col h-0 w-0 ",
+        orientation === "horizontal"
+          ? "-right-12 top-1/2 -translate-y-1/2"
+          : "-bottom-12 left-1/2 -translate-x-1/2 rotate-90",
+        className
+      )}
+      disabled={!canScrollNext}
+      onClick={scrollNext}
+      {...props}
+    >
+      
+      <span className="sr-only flex-col">Next slide</span>
+ <h2 className={`font-black flex-col text-center mb-3 text-white rotate-[40deg] lg:text-[22px]  sm:text-[30px] xs:text-[42px] text-[37.4px] leading-[53px] sm:leading-[50px] sm:mb-18 mb-0   justify-normal  `}>
+        SERIOUSLY
+      </h2>
+      <h2 className={`font-black flex-row text-center text-white  mr-[60px]  ml-[35px] lg:text-[22px] sm:text-[30px] xs:text-[42px] text-[37.4px] leading-[53px] sm:leading-[50px] sm:mb-18 mb-0   justify-normal  `}>
+        SERIOUSLY
+      </h2>
+      
+      
+      <h2 className={`font-black flex-col text-center mt-3 text-white -rotate-[40deg] lg:text-[22px]  sm:text-[30px] xs:text-[42px] text-[37.4px] leading-[53px] sm:leading-[50px] sm:mb-18 mb-0   justify-normal  `}>
+        SERIOUSLY
+      </h2>
+      
+    </Button>
+  )
+})
+CarouselNextTwo.displayName = "CarouselNextTwo"
+
+
+const CarouselNextThree = React.forwardRef<
+  HTMLButtonElement,
+  React.ComponentProps<typeof Button>
+>(({ className, variant = "outline", size = "icon", ...props }, ref) => {
+  const { orientation, scrollNext, canScrollNext } = useCarousel()
+
+  return (
+    <Button
+      ref={ref}
+      variant={variant}
+      size={size}
+      className={cn(
+        "absolute flex-col h-0 w-0 ",
+        orientation === "horizontal"
+          ? "-right-12 top-1/2 -translate-y-1/2"
+          : "-bottom-12 left-1/2 -translate-x-1/2 rotate-90",
+        className
+      )}
+      disabled={!canScrollNext}
+      onClick={scrollNext}
+      {...props}
+    >
+      
+      <span className="sr-only flex-col">Next slide</span>
+ <h2 className={`font-black flex-col text-center mb-3 text-white rotate-[40deg] lg:text-[27px]  sm:text-[30px] xs:text-[42px] text-[37.4px] leading-[53px] sm:leading-[50px] sm:mb-18 mb-0   justify-normal  `}>
+        GUITAR
+      </h2>
+      <h2 className={`font-black flex-row text-center text-white  mr-[60px]  ml-[35px] lg:text-[22px] sm:text-[30px] xs:text-[42px] text-[37.4px] leading-[53px] sm:leading-[50px] sm:mb-18 mb-0   justify-normal  `}>
+        GUITAR GUITAR
+      </h2>
+      
+      
+      <h2 className={`font-black flex-col text-center mt-3 text-white -rotate-[40deg] lg:text-[27px]  sm:text-[30px] xs:text-[42px] text-[37.4px] leading-[53px] sm:leading-[50px] sm:mb-18 mb-0   justify-normal  `}>
+        GUITAR
+      </h2>
+      
+    </Button>
+  )
+})
+CarouselNextThree.displayName = "CarouselNextThree"
+
 export {
   type CarouselApi,
   Carousel,
@@ -286,4 +460,8 @@ export {
   CarouselItem,
   CarouselPrevious,
   CarouselNext,
+  CarouselNextTwo,
+  CarouselPreviousTwo,
+  CarouselPreviousThree, 
+  CarouselNextThree
 }
