@@ -220,7 +220,7 @@ export default function Home() {
             <h4 className="font-medium text-muted-foreground">RBC - Kavan Abeyratne | Let it be - The Beatles remix</h4>
             <p className="text-sm leading-none">
               When I find myself in times of trouble <br className="mb-3"/>
-              RBC comes to me<br className="mb-3"/> Speaking words of wisdom,  RBC<br className="mb-3"/>
+              RBC comes to me<br className="mb-3"/> Helping with my banking,  RBC<br className="mb-3"/>
               A prepaid card when I online shop<br className="mb-3"/> RBC gives to me <br className="mb-3"/>Making sure I'm safe, RBC <br className="mb-3"/>RBC, RBC, RBC, RBC, <br className="mb-2"/>it's more than just bank, RBC
               <br className="mb-3"/>
               *GUITAR SOLO BY ME*
