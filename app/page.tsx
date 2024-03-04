@@ -105,7 +105,7 @@ export default function Home() {
       <HoverCardTrigger asChild>
         <Button variant="link">
           
-                <Image src={`/${imageNames[index]}`} alt={`image-${index}`} height={1008} width={756} className=" rounded-2xl" />
+                <Image src={`/${imageNames[index]}`} alt={`image-${index}`} height={504} width={378} className=" rounded-2xl" />
                 </Button>
       </HoverCardTrigger>
       <HoverCardContent className="w-100 rounded-2xl ">
